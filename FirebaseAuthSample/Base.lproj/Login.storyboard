@@ -42,17 +42,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="top" secondItem="p8Q-kH-hmc" secondAttribute="bottom" constant="36" id="FIe-IN-vhC"/>
-                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="J87-oh-YZ3"/>
-                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="trailing" secondItem="mUk-xn-YXR" secondAttribute="trailing" id="NWt-NQ-3qW"/>
-                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NY2-6r-429"/>
-                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="trailing" secondItem="3ug-y4-Pzi" secondAttribute="trailing" id="RBf-8v-2d0"/>
-                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="S3m-wt-QYc"/>
-                            <constraint firstItem="VKT-7e-SgC" firstAttribute="top" secondItem="mUk-xn-YXR" secondAttribute="bottom" constant="37" id="akG-y1-6XP"/>
-                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="centerX" secondItem="VKT-7e-SgC" secondAttribute="centerX" id="kct-s9-BSU"/>
-                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="leading" secondItem="mUk-xn-YXR" secondAttribute="leading" id="lZS-VI-Bvw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VKT-7e-SgC" secondAttribute="bottom" constant="430" id="mB2-Xg-XrC"/>
-                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="3ug-y4-Pzi" secondAttribute="leading" id="zxh-bw-dZB"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="trailing" secondItem="mUk-xn-YXR" secondAttribute="trailing" id="03u-Dp-s98"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="368-j3-x3B"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="3ug-y4-Pzi" secondAttribute="leading" id="37K-D5-4fD"/>
+                            <constraint firstItem="mUk-xn-YXR" firstAttribute="centerX" secondItem="VKT-7e-SgC" secondAttribute="centerX" id="Tb5-gp-oza"/>
+                            <constraint firstItem="VKT-7e-SgC" firstAttribute="top" secondItem="mUk-xn-YXR" secondAttribute="bottom" constant="37" id="TxH-SQ-sIN"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="leading" secondItem="mUk-xn-YXR" secondAttribute="leading" id="iUd-tI-dCD"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="lN4-6U-51v"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="trailing" secondItem="3ug-y4-Pzi" secondAttribute="trailing" id="nIk-OF-PB1"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="sbL-7t-5EM"/>
+                            <constraint firstItem="mUk-xn-YXR" firstAttribute="top" secondItem="3ug-y4-Pzi" secondAttribute="bottom" constant="38" id="xsG-6v-oyW"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="top" secondItem="p8Q-kH-hmc" secondAttribute="bottom" constant="36" id="zYm-Ah-deX"/>
                         </constraints>
                     </view>
                     <connections>
