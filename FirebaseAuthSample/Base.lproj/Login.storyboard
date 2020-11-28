@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,16 +11,60 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FirebaseAuthSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKT-7e-SgC">
+                                <rect key="frame" x="176" y="402" width="62" height="30"/>
+                                <state key="normal" title="ログイン"/>
+                                <connections>
+                                    <action selector="didTappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68r-Fi-b94"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8Q-kH-hmc">
+                                <rect key="frame" x="118" y="189" width="178" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ug-y4-Pzi">
+                                <rect key="frame" x="118" y="259" width="178" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUk-xn-YXR">
+                                <rect key="frame" x="118" y="331" width="178" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="top" secondItem="p8Q-kH-hmc" secondAttribute="bottom" constant="36" id="FIe-IN-vhC"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="145" id="J87-oh-YZ3"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="trailing" secondItem="mUk-xn-YXR" secondAttribute="trailing" id="NWt-NQ-3qW"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NY2-6r-429"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="trailing" secondItem="3ug-y4-Pzi" secondAttribute="trailing" id="RBf-8v-2d0"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="S3m-wt-QYc"/>
+                            <constraint firstItem="VKT-7e-SgC" firstAttribute="top" secondItem="mUk-xn-YXR" secondAttribute="bottom" constant="37" id="akG-y1-6XP"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="centerX" secondItem="VKT-7e-SgC" secondAttribute="centerX" id="kct-s9-BSU"/>
+                            <constraint firstItem="3ug-y4-Pzi" firstAttribute="leading" secondItem="mUk-xn-YXR" secondAttribute="leading" id="lZS-VI-Bvw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VKT-7e-SgC" secondAttribute="bottom" constant="430" id="mB2-Xg-XrC"/>
+                            <constraint firstItem="p8Q-kH-hmc" firstAttribute="leading" secondItem="3ug-y4-Pzi" secondAttribute="leading" id="zxh-bw-dZB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="p8Q-kH-hmc" id="Uai-y1-o3q"/>
+                        <outlet property="loginButton" destination="VKT-7e-SgC" id="Ntn-Kk-Rv4"/>
+                        <outlet property="passwordTextField" destination="3ug-y4-Pzi" id="Zkt-JC-Zzt"/>
+                        <outlet property="userNameTextField" destination="mUk-xn-YXR" id="3mQ-nE-reT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="94.419642857142847"/>
         </scene>
     </scenes>
     <resources>
